@@ -1,0 +1,10 @@
+#!/bin/sh -e
+
+cat<<EOF
+
+NOTE: will prompt for password to install packages with sudo apt-get.
+
+EOF
+
+sudo apt-get update
+sudo apt-get install -y task-spooler moreutils coreutils
